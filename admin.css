@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10%;
+    font-family: 'Gill Sans';
+    font-size: 80px;
+}   
+.logo span{                           
+    color: yellow;
+}
+
+.navbar{
+    background-color: #24203E;
+    box-shadow: 0px 3px 2px rgb(136, 136, 136);
+}
+ul li{
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 50px;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar h1{
+    color: white;
+    margin-left: 30px;
+    
+}
+.navbar .search{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-left: 3px;
+    margin: .5%;
+    width: 80%;
+    height: 30px;
+    margin: 2px;
+    margin-left: 30px;
+}
+input{
+    width: 100%;
+    background-color: none;
+    border: none;
+    border-radius: 20px;
+    padding-right: 10%;
+    height: 100%;
+    padding-left: 5px;
+    outline: none;
+}
+@media only screen and (max-width:1200px){
+    ul li a{
+        font-size: 24px;
+        margin-left: -30px;
+    }
+    .logo{
+        font-size: 50px;
+    }
+   
+} 
+@media only screen and (max-width:576px){
+    ul li a{
+        font-size: 15px;
+        margin-left: -50px;
+    }
+    .logo{
+        font-size: 30px;
+    }
+   
+}
+
+.cont1{
+    background-color: rgba(203, 203, 203, 0.667);
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+   
+}
+

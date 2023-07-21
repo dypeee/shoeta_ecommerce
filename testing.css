@@ -1,0 +1,391 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10%;
+    font-family: 'Gill Sans';
+}   
+.logo a span{                           
+    color: yellow;
+}
+.iconnavbar{
+    width: 30%;
+    height: auto;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+@media only screen and (max-width:576px){
+    .cart{
+        font-size: .7em;
+    }
+    .profile{
+        font-size: .7em;
+    }
+}
+
+.search{                                        
+    display: flex;
+    background-color: white;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-left: 3px;
+    margin: .5%;
+    width: 100%;
+    height: auto;
+    margin: 2px;
+}
+input{
+    width: 100%;
+    background-color: none;
+    border: none;
+    border-radius: 20px;
+    padding-right: 10%;
+    height: 100%;
+    padding-left: 5px;
+    outline: none;
+ 
+}
+.brand{
+    display: flex;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    padding: 5px;
+    transition: .5ms ease ease-in-out;
+}
+.brand a{
+    text-align: center;
+    text-decoration: none;
+    padding: 2px;
+    font-family: 'Trebuchet MS';
+    font-weight: 700;
+}
+.brand a:hover{
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+}
+.brand a:active{
+    color: yellow;
+}
+.selected{
+    border-bottom: 2px solid black;
+}
+
+@media only screen and (max-width:576px){
+    .brand a{
+        font-size: 16px;
+        padding: 1px;
+    }
+    .search{
+        height: 78%;
+    }
+} 
+.brandsection{                                                             /*products*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    background-color: white;
+    width: 59%;
+    height: auto;
+    margin: 10px;
+    box-shadow: 1px 1px 5px black;
+}
+.cont .product{
+    border: 1px solid black;
+    margin: 10px;
+}
+.description{
+    width: 100%;
+    margin: 15px;
+}
+@media only screen and (max-width:1200px){
+    .cont{
+        background-color: white;
+        width: 100%;
+        margin: 10px;
+        box-shadow: 1px 1px 5px black;
+    }
+}
+
+
+.second_cont{                                                                /*Product*/
+
+    
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+}
+.third_cont{
+    width: 90%;
+    margin: 20px;
+    
+}
+.forth_cont{
+    width: 90%;
+    margin: 20px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 20px;
+}
+.fifth_cont{
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.sixth_cont{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 5px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 20px;
+}
+.seventh_cont{
+    width: 90%;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width:1200px){
+    .second_cont{
+        width: 100%;
+    }
+    .fifth_cont{
+        width: 100%;
+    }
+    .sixth_cont{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:768px){
+    .second_cont .productimage{
+        width: 100%;
+    }
+    .fifth_cont .productimage{
+        width: 100%;
+    }
+    .sixth_cont .productimage{
+        width: 100%;
+    }
+    .runningshoes{
+        width: 80%;
+        font-size: 10px;
+        padding: 1;
+    }
+    .basketballshoes{
+        width: 100%;
+        height: 30px;
+    }
+} 
+
+
+
+.profilesection h2{                                      /*Profile Section*/
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    font-size: 40px;
+}
+.profilesection{
+    margin-top: 200px;
+}
+.profilenavbar a{
+    text-decoration: none;
+    color: black;
+}
+.profilenavbar h5{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.profilesetting{
+    margin-top: 250px;
+}
+.profilesetting h6{
+    padding-bottom: 10px;
+}
+.profilesetting a{
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width:1000px){
+   .profilesection h2{
+    font-size: 30px;
+    text-align: center;
+   }
+    
+} 
+@media only screen and (max-width:576px){
+    .profilenavbar a{
+        font-size: 11px;
+    }
+    .profilesection h2{
+        font-size: 18px;
+        text-align: center;
+    }
+    .profilesetting a{
+        font-size: 11px;
+    }
+} 
+
+
+.cartcont button{                           /*Cart*/
+    border: 1px solid grey;
+    padding: 3px 20% 3px 20%;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(99, 99, 99);
+    
+}
+.cartcont button:active{
+    box-shadow: none;
+    background-color: rgb(197, 197, 197);
+    /* background-color: #072527; */
+}
+
+
+.quantnum{
+    display: flex;
+    align-items: center;
+}
+.quantnum button{
+    width: 50px;
+    height: auto;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    min-width: 40px;
+ 
+}
+.quantnum h4{
+    padding: 20px;
+    width: 5%;
+}
+@media only screen and (max-width:576px){
+    .wordcart span{
+        font-size: 20px;
+    }
+} 
+ 
+
+
+.quantprod1{
+    display: flex;
+    align-items: center;
+}
+.quantprod1 button{
+    width: 30px;
+    height: auto;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    min-width: 40px;
+    
+}
+.quantprod1 h4{
+    padding: 10px;
+    width: 5%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.iconfooter{                                                                   /*Footer*/
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.help{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+.help a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.feedback{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+.feedback a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+.about a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.payoption{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.payoption{
+    padding: 10px;
+    row-gap: 20px;
+}
+
+
+
+
+
+
+
